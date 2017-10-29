@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>js动画效果</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <style type="text/css">
+    *{
+      padding:0px;
+      margin:0px;
+      font-family:"微软雅黑";
+    }
+    #div4{
+      width:200px;
+      height:200px;
+      background-color:#aaa;
+      position: relative;
+      left:-200px;
+      top:0px;
+    }
+    #div4 span{
+      width:40px;
+      height:20px;
+      background: #ccc;
+      position: absolute;
+      left:200px;
+      top:0px;
+      text-align: center;
+    }
+  </style>
+  <script type="text/javascript">
+    window.onload=function(){
+      var oDiv=document.getElementById('div4');
+      var oDiv2=document.getElementById('share2');
+
+      oDiv2.onmousedown=function(){
+        startMove(0);
+      }
+
+      oDiv2.onmouseup=function(){
+        startMove(-200);
+      }
+      var timer=null;
+      function startMove(iTarget){
+        clearInterval(timer);
+
+        timer=setInterval(function()
+        {
+          var speed=(iTarget-oDiv.offsetLeft)/30;
+          
+          speed=speed>0?Math.ceil(speed):Math.floor(speed);
+
+          if(oDiv.offsetLeft==iTarget)
+          {
+            clearInterval(timer);
+          }
+          else{
+            oDiv.style.left=oDiv.offsetLeft+speed+'px';
+          }
+        },10)
+      }
+
+    };
+
+  </script>
+</head>
+<body>
+  <div id="div4">
+    <span id="share2">分享</span>
+  </div>
+</body> 
+</html>
