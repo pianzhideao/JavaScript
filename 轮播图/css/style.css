@@ -1,0 +1,70 @@
+*{
+	margin:0px;padding:0px;text-decoration: none;
+}
+a{
+	text-decoration: none;
+}
+#lunbotu{
+	width:150px;
+	height:150px;
+	position: relative;
+	overflow: hidden;
+	margin:0 auto;
+	border:1px solid red;
+}
+#list{
+	width:1350px;
+	height:150px;
+	position: absolute;
+	z-index: 1;
+	border:1px solid red;
+}
+#list img{float:left;}
+#buttons{
+	position: absolute;
+	height:5px;
+	width:100px;
+	z-index: 2;
+	bottom:5px;
+	left:40px;
+}
+#buttons span{
+	cursor: pointer;
+	float:left;
+	border:1px solid #aaa;
+	width:5px;
+	height:5px;
+	border-radius:50%;
+	background-color: #ccc;
+	margin-right:5px;
+}
+#buttons .on{
+	background: orangered;/*选中的按钮样式*/
+}
+.arrow{
+	cursor:pointer;
+	display:none;
+	line-height:19px;
+	text-align:center;
+	font-size: 16px;
+	font-weight: bold;
+	width:20px;
+	height:20px;
+	position: absolute;
+	z-index:2;
+	top:50px;
+	background-color: rgba(0,0,0,0.3);
+	color:#fff;
+}
+.arrow:hover{
+	background-color: rgba(0,0,0,0.7);
+}
+#lunbotu:hover .arrow{
+	display:block;
+}
+#prev{
+	left:5px;
+}
+#next{
+	right:5px;
+}
