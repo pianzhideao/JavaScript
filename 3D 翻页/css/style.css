@@ -1,0 +1,66 @@
+
+#my3d{
+	-moz-perspective:800px;
+	perspective:800px;
+	-webkit-perspective:800px;
+	-moz-perspective-origin:50% 50%;
+	perspective-origin:50% 50%;
+	-webkit-perspective-origin:50% 50%;
+	overflow: hidden;
+	margin:auto;
+}
+#pagegroup{
+	width:400px;
+	height:400px;
+	margin:auto;
+	-moz-transform-style:-moz-preserve-3d;
+	transform-style:-moz-preserve-3d;
+	-webkit-transform-style:-moz-preserve-3d;
+	position: relative;
+}
+.page{
+	width:400px;
+	height:400px;
+	color:white;
+	background-color: black;
+	font-size: 400px;
+	font-weight: bold;
+	line-height: 400px;
+	text-align: center;
+	position:absolute;
+}
+#page1{
+	transform-origin: bottom;
+	-webkit-transform-origin: bottom;
+	-moz-transform-origin: bottom;
+	transition:-moz-transform 1s linear;
+	-webkit-transition:-webkit-transform 1s linear;
+	-moz-transition:-moz-transform 1s linear;
+}
+#page2,#page3,#page4,#page5,#page6{
+	transform-origin: bottom;
+	-webkit-transform-origin: bottom;
+	-moz-transform-origin: bottom;
+	transition:-moz-transform 1s linear;
+	-webkit-transition:-moz-transform 1s linear;
+	-moz-transition:-moz-transform 1s linear;
+	transform: rotateY(-90deg);
+	-webkit-transform: rotateY(-90deg);
+	-moz-transform: rotateY(-90deg);
+}
+#op{
+
+	font-size:30px;
+	margin-top:60px;
+	text-align: center;
+}
+#op a{
+	color:red;
+	text-decoration: none;
+}
+.pppp{
+	width:400px;
+	height:400px;
+	display: block;
+	color:red;
+}
