@@ -1,0 +1,45 @@
+*{
+	margin:0px;
+	padding:0px;
+	list-style:none;
+	font-family: 微软雅黑;
+}
+#gedan{
+	width:500px;
+	height:285px;
+	margin:0 auto;
+	border:1px solid red;
+}
+#gedan div{
+	float:left;
+	width:500px;
+	height:230px;
+	margin-top:5px;
+	/*border:1px solid red;*/
+}
+#gedan div p{
+	font-size:25px;
+	line-height:25px;
+	margin-left:10px;
+}
+#list {
+	margin-left:5px;
+}
+#list li{
+	float:left;
+	padding: 10px 20px;
+	font-size:25px;
+	color:#33ffff;
+}
+#list li:hover{
+	cursor: pointer;
+}
+.active{
+	background-color:#ff6;
+}
+.geci{
+	display:none;
+}
+.show{
+	display:block;
+}
